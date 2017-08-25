@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ZitrusWebUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar</output-path>
+    <root id="archive" name="ZitrusWebUI.jar">
+      <element id="module-output" name="ZitrusWebUI" />
+    </root>
+  </artifact>
+</component>
