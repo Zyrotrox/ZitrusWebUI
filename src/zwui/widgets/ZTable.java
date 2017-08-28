@@ -52,6 +52,16 @@ public class ZTable<E> extends ZWidget{
     }
 
     /**
+     * initilizes table w/ given type (draws header w/out rows)
+     * @param type
+     */
+    public ZTable(Class type){
+        this();
+        this.type = type;
+        initTable(type);
+    }
+
+    /**
      * initializes a new ZTable w/ given rows
      * @param rows
      */
@@ -61,6 +71,18 @@ public class ZTable<E> extends ZWidget{
         if(rows.size() > 0){
             initTable(rows.get(0).getClass());
         }
+    }
+
+    /**
+     * initializes a new ZTable z/ given rows, sets the type (if rows r empty)
+     * @param type
+     * @param rows
+     */
+    public ZTable(Class type, List<E> rows){
+        this();
+        this.rows = rows;
+        this.type = type;
+        initTable(type);
     }
 
     /**
