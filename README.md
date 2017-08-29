@@ -33,9 +33,11 @@ String html = btn.print();
 ```java
 List<YourClass> someList = getYourList();
 ZTable<YourClass> tbl = new ZTable<YourClass>(someList);
-//The table reads the class and writes all Properties w/ a getter in the table, you can sort it if you want
+//The table reads the class and writes all Properties w/ a getter in the table,
+//you can sort it if you want
 tbl.orderColumns(new String[]{"Property 1", "Property 3", "Property 2"});
-//A js function to execute when a table row is pressed, the function needs to take a jquery argument for the html row
+//A js function to execute when a table row is pressed, 
+//the function needs to take a jquery argument for the html row
 tbl.setRowOnClick("someJSFunction");
 
 String html = tbl.print();
@@ -51,7 +53,7 @@ grd.addChild(btn, 0, 1, 6);
 //or at the beginning of a new row if its too large)
 grd.addChild(tbl, 7);
 grd.addChild(btn, 6);
-//the button will get added below the table since the column span sum is above 12
+//the button will be added below the table since the column span sum is above 12
 
 String html = grd.print();
 ```
