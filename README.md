@@ -14,6 +14,8 @@ If you want to use JS functions you will also need JQuery, you can get it here h
 ```java
 ZLabel lbl = new ZLabel(ZLabelType.LBL);
 lbl.setText("Hello");
+//You can add Css to any ZWidget w/ this function
+lbl.addCss("margin-top: 20px");
 
 String html = lbl.print();
 ```
@@ -21,7 +23,7 @@ String html = lbl.print();
 **ZButton**
 ```java
 ZButton btn = new ZButton("button");
-btn.setGlyphicon("floppy-disk");
+btn.setGlyphicon(new ZGlyphicon("floppy-disk"));
 btn.setText("save");
 btn.addStyleClasses(new String[]{"btn", "btn-success"});
 btn.setOnClickJS = "someJSFunctionName";
