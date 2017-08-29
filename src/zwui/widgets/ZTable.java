@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ZTable<E> extends ZWidget{
+public class ZTable<E> extends ZWidget {
     private Class<E> type;
 
     /**
@@ -52,6 +52,16 @@ public class ZTable<E> extends ZWidget{
     }
 
     /**
+     * initilizes table w/ given type (draws header w/out rows)
+     * @param type
+     */
+    public ZTable(Class type){
+        this();
+        this.type = type;
+        initTable(type);
+    }
+
+    /**
      * initializes a new ZTable w/ given rows
      * @param rows
      */
@@ -61,6 +71,18 @@ public class ZTable<E> extends ZWidget{
         if(rows.size() > 0){
             initTable(rows.get(0).getClass());
         }
+    }
+
+    /**
+     * initializes a new ZTable z/ given rows, sets the type (if rows r empty)
+     * @param type
+     * @param rows
+     */
+    public ZTable(Class type, List<E> rows){
+        this();
+        this.rows = rows;
+        this.type = type;
+        initTable(type);
     }
 
     /**
@@ -209,7 +231,7 @@ public class ZTable<E> extends ZWidget{
      * initializes the display rows for the table
      * @param type
      */
-    private void initTable(Class type){
+    protected void initTable(Class type){
         this.type = type;
 
         if(type == String[].class){
@@ -224,7 +246,7 @@ public class ZTable<E> extends ZWidget{
     /**
      * initializes a Table of String arrays, the first row is the header row
      */
-    private void initStringTable(){
+    protected void initStringTable(){
         List<String[]> rows = (List<String[]>)this.rows;
         this.displayHeaders = Arrays.asList(rows.get(0));
         for(int i = 1; i < rows.size(); i++){

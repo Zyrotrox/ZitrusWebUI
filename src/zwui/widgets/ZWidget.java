@@ -116,8 +116,23 @@ public class ZWidget {
     }
 
     public String printTagOptions(){
-        String res = "id=\"" + this.id + "\" name=\"" +this.name +"\""  + this.printClasses() + " " + this.printCssStyle() + " " + this.printCustomTags() + " " + this.printOnClickJS();
-
+        // name=\"" +this.name +"\""  + this.printClasses() + " " + this.printCssStyle() + " " + this.printCustomTags() + " " + this.printOnClickJS();
+        String res = "id=\"" + this.id + "\" ";
+        if(this.name != null){
+            res += "name=\"" + this.name + "\" ";
+        }
+        if(this.styleClasses.size() > 0){
+            res += this.printClasses();
+        }
+        if(this.css.size() > 0){
+            res += this.printCssStyle();
+        }
+        if(this.customTags.size() > 0){
+            res += this.printCustomTags();
+        }
+        if(this.onClickJS != null){
+            res += this.printOnClickJS();
+        }
         return res;
     }
 
