@@ -6,16 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d93bd177-56e6-4c84-a685-bef614b25fe8" name="Default" comment="updated table">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zwui/widgets/ZDropdown.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zwui/widgets/ZForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar/ZitrusWebUI.jar" afterPath="$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar/ZitrusWebUI.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZTable.class" afterPath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZWidget.class" afterPath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZWidget.class" />
+    <list default="true" id="d93bd177-56e6-4c84-a685-bef614b25fe8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZGrid.class" afterPath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZGrid.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zwui/widgets/ZGrid.java" afterPath="$PROJECT_DIR$/src/zwui/widgets/ZGrid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zwui/widgets/ZTable.java" afterPath="$PROJECT_DIR$/src/zwui/widgets/ZTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zwui/widgets/ZWidget.java" afterPath="$PROJECT_DIR$/src/zwui/widgets/ZWidget.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +34,8 @@
       <file leaf-file-name="ZGrid.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+            <state relative-caret-position="187">
+              <caret line="24" column="94" lean-forward="true" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -418,7 +411,7 @@
       <workItem from="1503910714822" duration="1666000" />
       <workItem from="1503983950610" duration="2499000" />
       <workItem from="1504070625508" duration="48000" />
-      <workItem from="1504072077632" duration="2962000" />
+      <workItem from="1504072077632" duration="3164000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1503657702850</created>
@@ -441,11 +434,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503905940935</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Form &amp; Dropdown Widgets, fixed grid add child, updated ztable &amp; zwidget">
+      <created>1504076344649</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1504076344649</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26813000" />
+    <option name="totallyTimeSpent" value="27015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1634" height="1066" extended-state="6" />
@@ -489,7 +489,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="updated table" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated table" />
+    <MESSAGE value="Added Form &amp; Dropdown Widgets, fixed grid add child, updated ztable &amp; zwidget" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Form &amp; Dropdown Widgets, fixed grid add child, updated ztable &amp; zwidget" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -953,8 +954,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        <state relative-caret-position="187">
+          <caret line="24" column="94" lean-forward="true" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
           <folding />
         </state>
       </provider>
