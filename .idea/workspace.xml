@@ -7,16 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93bd177-56e6-4c84-a685-bef614b25fe8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ZitrusWebUI.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Examples/Examples.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Examples/res/output.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Examples/src/zwui/examples/HtmlPrinter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Examples/src/zwui/examples/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Examples/src/zwui/examples/ZButtonExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Examples/src/zwui/examples/ZWidgetExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar/ZitrusWebUI.jar" afterPath="$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar/ZitrusWebUI.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZButton.class" afterPath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZButton.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zwui/widgets/ZButton.java" afterPath="$PROJECT_DIR$/src/zwui/widgets/ZButton.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,8 +57,8 @@
       <file leaf-file-name="ZButtonExample.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Examples/src/zwui/examples/ZButtonExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="26" selection-end-column="40" />
+            <state relative-caret-position="286">
+              <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -449,7 +442,7 @@
       <workItem from="1503910714822" duration="1666000" />
       <workItem from="1503983950610" duration="2499000" />
       <workItem from="1504070625508" duration="48000" />
-      <workItem from="1504072077632" duration="6580000" />
+      <workItem from="1504072077632" duration="6709000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1503657702850</created>
@@ -493,11 +486,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504076499586</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added Examples, fixed button">
+      <created>1504079927078</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1504079927078</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30431000" />
+    <option name="totallyTimeSpent" value="30560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1634" height="1066" extended-state="6" />
@@ -542,7 +542,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="updated table" />
     <MESSAGE value="Added Form &amp; Dropdown Widgets, fixed grid add child, updated ztable &amp; zwidget" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Form &amp; Dropdown Widgets, fixed grid add child, updated ztable &amp; zwidget" />
+    <MESSAGE value="added Examples, fixed button" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Examples, fixed button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -992,8 +993,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Examples/src/zwui/examples/ZButtonExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="286">
+          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
