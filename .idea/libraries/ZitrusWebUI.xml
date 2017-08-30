@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ZitrusWebUI">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar/ZitrusWebUI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
