@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ZitrusWebUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar</output-path>
+    <root id="archive" name="ZitrusWebUI.jar">
+      <element id="module-output" name="ZitrusWebUI" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/dist/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
