@@ -3,6 +3,12 @@
     <output-path>$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar</output-path>
     <root id="archive" name="ZitrusWebUI.jar">
       <element id="module-output" name="ZitrusWebUI" />
+<<<<<<< HEAD
+=======
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/dist/META-INF/MANIFEST.MF" />
+      </element>
+>>>>>>> 67210021dcc7e65ee03d3a53a61793cebf029e88
     </root>
   </artifact>
 </component>

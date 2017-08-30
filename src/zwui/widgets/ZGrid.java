@@ -33,9 +33,12 @@ public class ZGrid extends ZWidget {
     }
 
     public void addChild(ZWidget child, int columnSpan) throws Exception{
+<<<<<<< HEAD
         if(rows.size() < 1){
             rows.add(initRow());
         }
+=======
+>>>>>>> 67210021dcc7e65ee03d3a53a61793cebf029e88
         if(rows.get(rows.size()-1).checkSpace(columnSpan)){
             rows.get(rows.size()-1).appendChild(child, columnSpan, this.gridColumnType);
         }else {
