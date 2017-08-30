@@ -231,7 +231,7 @@ public class ZTable<E> extends ZWidget{
      * initializes the display rows for the table
      * @param type
      */
-    private void initTable(Class type){
+    protected void initTable(Class type){
         this.type = type;
 
         if(type == String[].class){
@@ -246,7 +246,7 @@ public class ZTable<E> extends ZWidget{
     /**
      * initializes a Table of String arrays, the first row is the header row
      */
-    private void initStringTable(){
+    protected void initStringTable(){
         List<String[]> rows = (List<String[]>)this.rows;
         this.displayHeaders = Arrays.asList(rows.get(0));
         for(int i = 1; i < rows.size(); i++){
