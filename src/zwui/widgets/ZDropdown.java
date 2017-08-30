@@ -63,4 +63,13 @@ public class ZDropdown<E> extends ZWidget {
         }
         return res;
     }
+
+    public List<E> getOptions() {
+        return options;
+    }
+
+    public void setOptions(List<E> options) {
+        this.options = options;
+        initDropdown();
+    }
 }

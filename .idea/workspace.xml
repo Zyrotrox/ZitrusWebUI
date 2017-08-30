@@ -7,9 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93bd177-56e6-4c84-a685-bef614b25fe8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar/ZitrusWebUI.jar" afterPath="$PROJECT_DIR$/out/artifacts/ZitrusWebUI_jar/ZitrusWebUI.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZButton.class" afterPath="$PROJECT_DIR$/out/production/ZitrusWebUI/zwui/widgets/ZButton.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Examples/src/zwui/examples/ZButtonExample.java" afterPath="$PROJECT_DIR$/Examples/src/zwui/examples/ZButtonExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zwui/widgets/ZDropdown.java" afterPath="$PROJECT_DIR$/src/zwui/widgets/ZDropdown.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,6 +42,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ZInput.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-71">
+              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ZWidgetExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/src/zwui/examples/ZWidgetExample.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZButtonExample.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZButtonExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/src/zwui/examples/ZButtonExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+            <state relative-caret-position="48">
+              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,43 +121,12 @@
       <file leaf-file-name="ZDropdown.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZDropdown.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="29" column="59" lean-forward="false" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+            <state relative-caret-position="48">
+              <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-              <folding>
-                <element signature="e#1846#1847#0" expanded="true" />
-                <element signature="e#1891#1892#0" expanded="true" />
-                <element signature="e#1925#1926#0" expanded="true" />
-                <element signature="e#1956#1957#0" expanded="true" />
-                <element signature="e#2003#2004#0" expanded="true" />
-                <element signature="e#2043#2044#0" expanded="true" />
-                <element signature="e#2076#2077#0" expanded="true" />
-                <element signature="e#2105#2106#0" expanded="true" />
-                <element signature="e#2149#2150#0" expanded="true" />
-                <element signature="e#2185#2186#0" expanded="true" />
-                <element signature="e#2218#2219#0" expanded="true" />
-                <element signature="e#2247#2248#0" expanded="true" />
-                <element signature="e#2291#2292#0" expanded="true" />
-                <element signature="e#2327#2328#0" expanded="true" />
-                <element signature="e#2365#2366#0" expanded="true" />
-                <element signature="e#2398#2399#0" expanded="true" />
-                <element signature="e#2451#2452#0" expanded="true" />
-                <element signature="e#2495#2496#0" expanded="true" />
-                <element signature="e#2532#2533#0" expanded="true" />
-                <element signature="e#2564#2565#0" expanded="true" />
-                <element signature="e#2615#2616#0" expanded="true" />
-                <element signature="e#2657#2658#0" expanded="true" />
+                <element signature="e#1678#1679#0" expanded="true" />
+                <element signature="e#1708#1709#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/zwui/widgets/ZLabel.java" />
         <option value="$PROJECT_DIR$/src/zwui/widgets/ZTable.java" />
         <option value="$PROJECT_DIR$/src/zwui/widgets/ZWidget.java" />
-        <option value="$PROJECT_DIR$/src/zwui/widgets/ZDropdown.java" />
         <option value="$PROJECT_DIR$/src/zwui/widgets/ZForm.java" />
         <option value="$PROJECT_DIR$/src/zwui/widgets/ZGrid.java" />
         <option value="$PROJECT_DIR$/Examples/src/zwui/examples/ZWidgetExample.java" />
@@ -208,6 +186,7 @@
         <option value="$PROJECT_DIR$/Examples/src/zwui/examples/Main.java" />
         <option value="$PROJECT_DIR$/src/zwui/widgets/ZButton.java" />
         <option value="$PROJECT_DIR$/Examples/src/zwui/examples/ZButtonExample.java" />
+        <option value="$PROJECT_DIR$/src/zwui/widgets/ZDropdown.java" />
       </list>
     </option>
   </component>
@@ -442,7 +421,7 @@
       <workItem from="1503910714822" duration="1666000" />
       <workItem from="1503983950610" duration="2499000" />
       <workItem from="1504070625508" duration="48000" />
-      <workItem from="1504072077632" duration="6709000" />
+      <workItem from="1504072077632" duration="8572000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1503657702850</created>
@@ -493,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504079927078</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added Examples, fixed button">
+      <created>1504080042552</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1504080042552</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30560000" />
+    <option name="totallyTimeSpent" value="32423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1634" height="1066" extended-state="6" />
@@ -555,7 +541,7 @@
         <state relative-caret-position="340">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -632,9 +618,9 @@
         <state relative-caret-position="340">
           <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1938#1939#0" expanded="false" />
+            <element signature="e#1968#1969#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -817,9 +803,9 @@
         <state relative-caret-position="459">
           <caret line="28" column="87" lean-forward="false" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1938#1939#0" expanded="false" />
+            <element signature="e#1968#1969#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -829,13 +815,13 @@
         <state relative-caret-position="374">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#603#604#0" expanded="false" />
+            <element signature="e#645#646#0" expanded="false" />
+            <element signature="e#676#677#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#771#772#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,7 +831,7 @@
         <state relative-caret-position="340">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -854,14 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3876">
           <caret line="233" column="13" lean-forward="false" selection-start-line="233" selection-start-column="4" selection-end-line="233" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -965,16 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZDropdown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="29" column="59" lean-forward="false" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -993,11 +961,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Examples/src/zwui/examples/ZButtonExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        <state relative-caret-position="48">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZDropdown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1708#1709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zwui/widgets/ZInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
