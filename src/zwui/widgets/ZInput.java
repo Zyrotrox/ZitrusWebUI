@@ -6,6 +6,9 @@ public class ZInput extends ZWidget {
     private String type;
 
     private String onValueChangedJS;
+    private String onInputJS;
+
+    private boolean required;
 
     public ZInput(){
         super();
@@ -13,18 +16,36 @@ public class ZInput extends ZWidget {
         this.value = "";
         this.placeholder = "";
         this.type = "text";
+        this.required = false;
     }
 
     public ZInput(String value){
         this.value = value;
         this.placeholder = "";
         this.type = "text";
+        this.required = false;
     }
 
     @Override
     public String print(){
-        String res = "<input type=\""+type+"\" placeholder=\""+this.placeholder+"\" " +
-                "value=\""+this.value+"\" onchange=\""+this.onValueChangedJS+"($(this));\" " + this.printTagOptions() + " />";
+        String res = "<input type=\""+type+"\" ";
+        if(this.placeholder != null && this.placeholder.length() > 0){
+            res += "placeholder=\""+this.placeholder+"\" ";
+        }
+        if(this.value != null && this.value.length() > 0){
+            res += "value=\""+this.value+"\" ";
+        }
+        if(this.onValueChangedJS != null && this.onValueChangedJS.length() > 0){
+            res += "onchange=\""+this.onValueChangedJS+"\" ";
+        }
+        if(this.onInputJS != null && this.onInputJS.length() > 0){
+            res += "oninput=\""+this.onInputJS+"\" ";
+        }
+        if(this.required){
+            res += "required";
+        }
+        res += this.printTagOptions() + " />";
+
         return res;
     }
 
@@ -58,5 +79,21 @@ public class ZInput extends ZWidget {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getOnInputJS() {
+        return onInputJS;
+    }
+
+    public void setOnInputJS(String onInputJS) {
+        this.onInputJS = onInputJS;
+    }
+
+    public boolean isRequired() {
+        return required;
+    }
+
+    public void setRequired(boolean required) {
+        this.required = required;
     }
 }
