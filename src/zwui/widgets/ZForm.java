@@ -13,6 +13,7 @@ public class ZForm extends ZWidget {
     public ZForm(){
         super();
         this.grd_form = new ZGrid();
+        initForm();
     }
 
     private void initForm(){

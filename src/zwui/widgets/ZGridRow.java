@@ -59,7 +59,12 @@ public class ZGridRow extends ZWidget {
 
     public void appendChild(ZWidget child, int span, String colType) throws Exception{
         this.sortChildren();
-        int col = this.children.get(this.children.size()-1).getColumn() + this.children.get(this.children.size()-1).getColumnSpan();
+        int col;
+        if(this.children.size() > 0){
+            col = this.children.get(this.children.size()-1).getColumn() + this.children.get(this.children.size()-1).getColumnSpan();
+        }else {
+            col = 0;
+        }
         this.addChild(child, col, span, colType);
     }
 }

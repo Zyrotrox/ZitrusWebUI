@@ -20,8 +20,8 @@ public class ZDropdown<E> extends ZWidget {
     }
 
     private void initDropdown(){
-        initDisplayNames(this.options);
-        initValues(this.options);
+        this.displayNames = initDisplayNames(this.options);
+        this.vales = initValues(this.options);
     }
 
     @Override
