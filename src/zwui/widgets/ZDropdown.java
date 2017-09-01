@@ -10,6 +10,8 @@ public class ZDropdown<E> extends ZWidget {
     private List<String> displayNames;
     private List<String> vales;
 
+    private String active;
+
     public ZDropdown(){
         super();
         this.displayNames = new ArrayList<>();
@@ -27,9 +29,22 @@ public class ZDropdown<E> extends ZWidget {
     @Override
     public String print(){
         String res = "<select " + printTagOptions() + " >";
-        for(int i = 0; i < displayNames.size(); i++){
-            res += "<option value=\""+this.vales.get(i)+"\">" +
-                    this.displayNames.get(i) + "</option>";
+        if(this.active != null){
+            String selected;
+            for(int i = 0; i < displayNames.size(); i++){
+                if(this.active.equals(vales.get(i))){
+                    selected = "selected=\"selected\"";
+                }else {
+                    selected = "";
+                }
+                res += "<option value=\""+this.vales.get(i)+"\" "+selected+">" +
+                        this.displayNames.get(i) + "</option>";
+            }
+        }else {
+            for(int i = 0; i < displayNames.size(); i++){
+                res += "<option value=\""+this.vales.get(i)+"\">" +
+                        this.displayNames.get(i) + "</option>";
+            }
         }
         res += "</select>";
         return res;
@@ -70,5 +85,13 @@ public class ZDropdown<E> extends ZWidget {
     public void setOptions(List<E> options) {
         this.options = options;
         initDropdown();
+    }
+
+    public String getActive() {
+        return active;
+    }
+
+    public void setActive(String active) {
+        this.active = active;
     }
 }

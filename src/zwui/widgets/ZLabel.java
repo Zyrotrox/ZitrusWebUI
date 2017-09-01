@@ -6,7 +6,7 @@ public class ZLabel extends ZWidget {
     private ZLabelType labelType;
 
     private String text;
-
+    private String targetId;
 
     public ZLabel(ZLabelType zlt){
         super();
@@ -17,6 +17,9 @@ public class ZLabel extends ZWidget {
     @Override
     public String print(){
         String options = this.printTagOptions();
+        if(this.targetId != null){
+            this.addCustomTag("for", targetId);
+        }
         if(this.child != null){
             return this.labelType.getStartTag(options) + this.child.print() + this.text + this.labelType.getEndTag();
         }else {
@@ -38,5 +41,13 @@ public class ZLabel extends ZWidget {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public String getTargetId() {
+        return targetId;
+    }
+
+    public void setTargetId(String targetId) {
+        this.targetId = targetId;
     }
 }

@@ -17,6 +17,8 @@ public class ZList<E> extends ZWidget {
     private boolean searchable;
     private String searchPlaceholder;
 
+    private List<String> active;
+
 
     public ZList(){
         super();
@@ -63,6 +65,12 @@ public class ZList<E> extends ZWidget {
             lbl_row.addCustomTag(new String[]{"for", inp_checked.getId()});
             lbl_row.setChild(inp_checked);
             lbl_row.setText(displayNames.get(i));
+            if(active != null && active.size() > 0){
+                if(active.contains(this.values.get(i))){
+                    inp_checked.addCustomTag("checked", "checked");
+                    lbl_row.addStyleClass("active");
+                }
+            }
             if(rowOnClickJS != null){
                 lbl_row.setOnClickJS(rowOnClickJS);
             }
@@ -140,5 +148,13 @@ public class ZList<E> extends ZWidget {
     public void setSearchable(boolean searchable, String placeholder) {
         this.searchable = searchable;
         this.searchPlaceholder = placeholder;
+    }
+
+    public List<String> getActive() {
+        return active;
+    }
+
+    public void setActive(List<String> active) {
+        this.active = active;
     }
 }

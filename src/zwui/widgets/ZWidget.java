@@ -147,6 +147,11 @@ public class ZWidget {
     public void addCustomTag(String[] tag){
         this.customTags.add(tag);
     }
+
+    public void addCustomTag(String name, String value){
+        this.customTags.add(new String[]{name, value});
+    }
+
     public void addCustomTags(String[][] tags){
         for(String[] c : tags){
             this.customTags.add(c);

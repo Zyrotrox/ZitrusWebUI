@@ -1,5 +1,6 @@
 package zwui.widgets;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ZForm extends ZWidget {
@@ -9,10 +10,12 @@ public class ZForm extends ZWidget {
     private ZButton btn_submit;
     private ZButton btn_clear;
     private ZLink lnk_back;
+    private List<ZInput> hiddenFields;
 
     public ZForm(){
         super();
         this.grd_form = new ZGrid();
+        this.hiddenFields = new ArrayList<>();
         initForm();
     }
 
@@ -29,6 +32,11 @@ public class ZForm extends ZWidget {
     public String print(){
         String res = "<form action=\""+this.action+"\" method=\""+this.method+"\" "
                 + printTagOptions() + " >";
+        if(this.hiddenFields.size() > 0){
+            for(ZInput inp : hiddenFields){
+                res += inp.print();
+            }
+        }
         res += grd_form.print();
         res += btn_submit.print();
         if(btn_clear != null){
@@ -62,6 +70,13 @@ public class ZForm extends ZWidget {
         }else {
             addStep(label, input);
         }
+    }
+
+    public void addHiddenField(String name, String value){
+        ZInput inp = new ZInput(value);
+        inp.setName(name);
+        inp.setType("hidden");
+        this.hiddenFields.add(inp);
     }
 
     public void setSubmitButtonText(String text){
@@ -106,5 +121,13 @@ public class ZForm extends ZWidget {
 
     public void setBtn_clear(ZButton btn_clear) {
         this.btn_clear = btn_clear;
+    }
+
+    public List<ZInput> getHiddenFields() {
+        return hiddenFields;
+    }
+
+    public void setHiddenFields(List<ZInput> hiddenFields) {
+        this.hiddenFields = hiddenFields;
     }
 }
