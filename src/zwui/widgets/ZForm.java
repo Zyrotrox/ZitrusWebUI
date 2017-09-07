@@ -7,15 +7,16 @@ public class ZForm extends ZWidget {
     private ZGrid grd_form;
     private String method;
     private String action;
+    private List<ZWidget> formButtons;
     private ZButton btn_submit;
-    private ZButton btn_clear;
-    private ZLink lnk_back;
     private List<ZInput> hiddenFields;
+    private List<String[]> urlParameters;
 
     public ZForm(){
         super();
         this.grd_form = new ZGrid();
         this.hiddenFields = new ArrayList<>();
+        formButtons = new ArrayList<>();
         initForm();
     }
 
@@ -30,6 +31,12 @@ public class ZForm extends ZWidget {
 
     @Override
     public String print(){
+        if(this.urlParameters != null && this.urlParameters.size() > 0){
+            action += "?";
+            for(String[] para : this.urlParameters)
+                action += para[0] + "=" + para[1] + "&";
+            action = action.substring(0, action.length()-1);
+        }
         String res = "<form action=\""+this.action+"\" method=\""+this.method+"\" "
                 + printTagOptions() + " >";
         if(this.hiddenFields.size() > 0){
@@ -38,13 +45,13 @@ public class ZForm extends ZWidget {
             }
         }
         res += grd_form.print();
-        res += btn_submit.print();
-        if(btn_clear != null){
-            res += btn_clear.print();
+        ZContainer btns = new ZContainer();
+        btns.addChild(btn_submit);
+        for(ZWidget w : this.formButtons){
+            btns.addChild(w);
         }
-        if(lnk_back != null){
-            res += lnk_back.print();
-        }
+        res += btns.print();
+
         res += "</form>";
         return res;
     }
@@ -79,16 +86,16 @@ public class ZForm extends ZWidget {
         this.hiddenFields.add(inp);
     }
 
+    public void addUrlParameter(String name, String value){
+        this.urlParameters.add(new String[]{name, value});
+    }
+
     public void setSubmitButtonText(String text){
         this.btn_submit.setText(text);
     }
 
-    public ZLink getLnk_back() {
-        return lnk_back;
-    }
-
-    public void setLnk_back(ZLink lnk_back) {
-        this.lnk_back = lnk_back;
+    public void addFormButton(ZWidget widget){
+        this.formButtons.add(widget);
     }
 
     public String getMethod() {
@@ -115,19 +122,19 @@ public class ZForm extends ZWidget {
         this.btn_submit = btn_submit;
     }
 
-    public ZButton getBtn_clear() {
-        return btn_clear;
-    }
-
-    public void setBtn_clear(ZButton btn_clear) {
-        this.btn_clear = btn_clear;
-    }
-
     public List<ZInput> getHiddenFields() {
         return hiddenFields;
     }
 
     public void setHiddenFields(List<ZInput> hiddenFields) {
         this.hiddenFields = hiddenFields;
+    }
+
+    public List<String[]> getUrlParameters() {
+        return urlParameters;
+    }
+
+    public void setUrlParameters(List<String[]> urlParameters) {
+        this.urlParameters = urlParameters;
     }
 }
