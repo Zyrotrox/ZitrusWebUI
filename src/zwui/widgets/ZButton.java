@@ -26,30 +26,18 @@ public class ZButton extends ZWidget{
     }
 
     @Override
-    public String print(){
-<<<<<<< HEAD
+    public String print() {
         String res = "<button type=\"" + this.btnType + "\" ";
-        if(this.value != null){
-            res += "value=\""+this.value+"\" ";
+        if (this.value != null) {
+            res += "value=\"" + this.value + "\" ";
         }
-        if(this.tooltiphtml != null){
+        if (this.tooltiphtml != null) {
             res += tooltiphtml;
         }
         res += this.printTagOptions() + ">";
 
-        if(this.glyphicon != null){
+        if (this.glyphicon != null) {
             res += this.glyphicon.print() + " " + this.text;
-        }else{
-            res += this.text;
-=======
-        String res;
-        if(this.glyphicon != null){
-            res = "<button type=\"" + this.btnType + "\" value=\""+this.value+"\" " + tooltiphtml + this.printTagOptions() + ">" + this.glyphicon.print()
-                    + " " + this.text;
-        }else{
-            res = "<button type='" + this.btnType + "' "  + this.printTagOptions() + ">"
-                    + " " + this.text;
->>>>>>> 67210021dcc7e65ee03d3a53a61793cebf029e88
         }
         return res + "</button>";
     }

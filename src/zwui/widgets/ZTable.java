@@ -7,11 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-<<<<<<< HEAD
-public class ZTable<E> extends ZWidget{
-=======
+
 public class ZTable<E> extends ZWidget {
->>>>>>> 67210021dcc7e65ee03d3a53a61793cebf029e88
     private Class<E> type;
 
     /**
