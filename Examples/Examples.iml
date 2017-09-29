@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ZitrusWebUI" level="project" />
+    <orderEntry type="module" module-name="ZitrusWebUI" />
   </component>
 </module>

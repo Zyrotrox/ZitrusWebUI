@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Examples/Examples.iml" filepath="$PROJECT_DIR$/Examples/Examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZitrusWebUI.iml" filepath="$PROJECT_DIR$/ZitrusWebUI.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/.idea/ZitrusWebUI.iml" filepath="$PROJECT_DIR$/.idea/ZitrusWebUI.iml" />
->>>>>>> 67210021dcc7e65ee03d3a53a61793cebf029e88
     </modules>
   </component>
 </project>
